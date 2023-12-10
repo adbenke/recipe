@@ -64,14 +64,13 @@ dt{
 dd{
     position: relative;
     bottom: 18px;
-    left: 50px;
+    left: 70px;
 }
 
 #ingredients li{
     list-style-type: square;
     list-style-position: outside;
-    padding-bottom: 5px;
-    padding-left: 0px;
+    padding: 10px 0px;
 }
 #directions li{
     list-style-type:decimal;
@@ -84,34 +83,16 @@ dd{
     background-color: #74bfbf;
     padding-top: 5px;
 }
-.sides{
+#dishes h3{
     display: flex;
-}
-#MR{
-    position: absolute;
-    left: 370px;
-    top: 2330px;
-}
-#SLSA{
-    position: absolute;
-    left: 370px;
-    top: 2475px;
-}
-#GC{
-    position: absolute;
-    left: 370px;
-    top: 2620px;
-}
-#TRT{
-    position: absolute;
-    left: 370px;
-    top: 2765px;
+    position: relative;
+    left: 145px;
+    top: 25px;
 }
 .sides div{
     position: relative;
     left: 135px;
     text-align: left;
-    padding-top: 10px;
 }
 .sides img{
     position: absolute;
@@ -135,6 +116,7 @@ dd{
 #mainNav{
     position: absolute;
     top:0px;
+    z-index: 1;
 }
 #mainNav h3{
     visibility: hidden;
@@ -218,3 +200,5 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
+
+
