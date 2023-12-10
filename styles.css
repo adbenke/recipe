@@ -20,6 +20,7 @@ h1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
     text-align: center;
+    padding-top: 140px;
 }
 h2{
     font-family: 'Bebas Neue', sans-serif;
@@ -36,10 +37,22 @@ nav ul{
 nav a{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
-    text-decoration: none;
+    text-decoration: none;  
+    color: #eb5428;
 }
 li {
     list-style-type: none;
+}
+header div{
+    display: grid;
+    text-align: center;
+    margin:0 auto;
+}
+header div svg{
+    grid-row: 1/2;
+}
+header div a{
+    grid-row: 2/3;
 }
 main > img{
     width:414px;
@@ -53,6 +66,7 @@ dd{
     bottom: 18px;
     left: 50px;
 }
+
 #ingredients li{
     list-style-type: square;
     list-style-position: outside;
@@ -65,6 +79,7 @@ dd{
     padding-bottom: 5px;
     line-height: 25px;
 }
+
 #dishes{
     background-color: #74bfbf;
     padding-top: 5px;
@@ -72,33 +87,126 @@ dd{
 .sides{
     display: flex;
 }
-.sides h3{
-    position: relative;
-    left: 138px;
-    bottom: 30px;
+#MR{
+    position: absolute;
+    left: 370px;
+    top: 2330px;
+}
+#SLSA{
+    position: absolute;
+    left: 370px;
+    top: 2475px;
+}
+#GC{
+    position: absolute;
+    left: 370px;
+    top: 2620px;
+}
+#TRT{
+    position: absolute;
+    left: 370px;
+    top: 2765px;
 }
 .sides div{
-    display: grid;
-    margin-left: 10px;
-    line-height: 0px;
+    position: relative;
+    left: 135px;
+    text-align: left;
     padding-top: 10px;
 }
 .sides img{
     position: absolute;
     width: 100px;
+    height: 100px;
     padding-left: 18px;
 }
 .sides dt{
     position: relative;
-    bottom: 20px;
+    bottom: 15px;
 }
 .sides dd{
     visibility: hidden;
 }
-.sides svg{
-    position: relative;
-    bottom: 20px;
-}
 .stars svg{
-    padding-left: 10px;
+    position: relative;
+    bottom: 45px;
+    left:10px;
+}
+
+#mainNav{
+    position: absolute;
+    top:0px;
+}
+#mainNav h3{
+    visibility: hidden;
+}
+#mainNav ul{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    list-style:none;
+}
+#mainNav li > img{
+    width:50px;
+    height:50px;
+}
+
+#search label{
+    visibility: hidden;
+}
+#search input{
+    display: flex;
+    position: absolute;
+    left: 130px;
+    bottom: 30px;
+    margin: 0 auto;
+    padding: 5px 20px;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
 }
