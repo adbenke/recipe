@@ -156,10 +156,18 @@ dd{
 #search input{
     display: flex;
     position: absolute;
-    left: 130px;
-    bottom: 30px;
+    left: 80px;
+    bottom: 100px;
     margin: 0 auto;
-    padding: 5px 20px;
+    padding: 14px 20px;
+    border: solid 2px #eb5428;
+}
+#search button{
+    position: absolute;
+    left: 275px;
+    bottom: 100px;
+    border: solid 1.5px #eb5428;
+    background-color: #eb5428;
 }
 
 label {
