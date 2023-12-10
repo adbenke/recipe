@@ -241,3 +241,88 @@ footer small{
     position: relative;
     top:210px;
 }
+
+
+@media screen and (min-width:768px){
+    body{
+        width: 768px;
+    }
+    main img{
+        width: 768px;
+    }
+    #details dl{
+        margin:0 auto;
+        text-align: center;
+        padding-right: 100px;
+    }
+    #details dd{
+        padding-left: 40px;
+    }
+    #medGrid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #ingredients{
+        grid-template-areas: 1/2;
+    }
+    #directions{
+        grid-template-areas: 2/3;
+    }
+    #dishes section{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #med1grid{
+        grid-column: 1/2;
+    }
+    #ned2grid{
+        grid-column:2/3;
+    }
+    .sides{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .sides h3{
+        grid-row: 1/2;
+    }
+    .sides div{
+        grid-row:2/3;
+    }
+    footer ul{
+        margin:0 auto;
+        position: relative;
+        left: 180px;
+    }
+    footer img{
+        position: relative;
+        bottom: 150px;
+        right: 170px;
+    }
+    footer small{
+        position: relative;
+        top: 150px;
+        right: 170px;
+    }
+    #search input{
+        left: 260px;
+        top: 200px;
+        padding: 20px;
+    }
+    #search button{
+        left: 450px;
+        top:200px;
+        padding-bottom:40px;
+    }
+    h1{
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 300px;
+    }
+    #mainNav ul {
+        overflow: visible;
+        position: absolute;
+        top:30px;
+        padding-left: 80px;
+    }
+}
+@media screen and (min-width:768px)
