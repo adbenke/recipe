@@ -263,10 +263,10 @@ footer small{
         grid-template-columns: 1fr 1fr;
     }
     #ingredients{
-        grid-template-areas: 1/2;
+        grid-column:1/2;
     }
     #directions{
-        grid-template-areas: 2/3;
+        grid-column: 2/3;
     }
     #dishes section{
         display:grid;
@@ -325,4 +325,65 @@ footer small{
         padding-left: 80px;
     }
 }
-@media screen and (min-width:768px)
+@media screen and (min-width:1280px) {
+    body{
+        width:1280px;
+    }
+    #details{
+        background-color: #0d0d0d;
+        color:#74bfbf;        
+    }
+    #bar {
+        display: flex;
+    }
+    #bar dl{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    #bar dt{
+        grid-row:1/2;
+    }
+    #bar dd{
+        grid-row: 2/3;
+        padding-right: 10px;
+    }
+    #medGrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #ingredients{
+        grid-column: 1/2;
+    }
+    #directions{
+        grid-column: 3/5;
+    }
+    #dishes{
+        display: flex;
+    }
+    .sides img {
+        height: 200px;
+        width: 200px;
+    }
+    #dishes h3{
+        top:180px;
+        left: 30px;
+    }
+    .sides div{
+        left: 20px;
+        top:25px;
+        width: 200px;
+    }
+    footer ul{
+        left: 400px;
+        padding-right:50px;
+    }
+    footer div{
+        padding-right: 50px;
+    }
+    footer img{
+        right: 500px;
+    }
+    footer small{
+        right: 500px;
+    }
+}
