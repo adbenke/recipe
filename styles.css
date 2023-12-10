@@ -201,4 +201,26 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
+footer nav{
+    display: grid;
+    text-align: center;
 
+}
+footer h3, footer h4 {
+    visibility: hidden;
+    font-size: 5px;
+}
+footer ul{
+    display: flex;
+    text-align: center;
+}
+footer nav li{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: #eb5428;
+}
+footer nav li, footer nav svg{
+    margin: 0 auto;
+}
